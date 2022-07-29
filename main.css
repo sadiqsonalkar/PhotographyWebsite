@@ -234,7 +234,7 @@ blockquote span{
     -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
 }
 .sec-one-left div{
-    color:chartreuse;
+    color: #fff;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -283,6 +283,7 @@ blockquote span{
     -moz-box-shadow: 0 0 8px #000;
 }
 
+
 /* section two */
 .section-two{
     margin: 40px 0;
@@ -323,6 +324,8 @@ blockquote span{
 
 /************* end of index.html ***********/
 
+
+
 /**************** gallery.html ***************/
 
 /* section three */
@@ -349,6 +352,8 @@ blockquote span{
 }
 
 /************** end of gallery.html ***********/
+
+
 
 /****************** blog.html ****************/
 
@@ -389,6 +394,8 @@ blockquote span{
 }
 
 /*************** end of blog.html ***********/
+
+
 
 /*************** contact.html **************/
 
@@ -447,6 +454,8 @@ blockquote span{
 }
 
 /************** end of contact.html **********/
+
+
 
 /******************* Footer Styling *****************/
 
@@ -512,6 +521,27 @@ blockquote span{
 
 /***************** Media Queries *****************/
 
+@media screen and (min-width: 800px){
+    /* section two */
+    .insta-imgs{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* section three */
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* section four */
+    .blog-wrapper-sm{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    
+}
+
 @media screen and (min-width: 992px){
     /* header & footer */
     .nav-section{
@@ -544,6 +574,7 @@ blockquote span{
     .about{
         margin-top: 0;
     }
+
 }
 
 @media screen and (min-width: 1000px){
@@ -592,13 +623,6 @@ blockquote span{
     }
 }
 
-@media screen and (min-width: 1400px){
-    /* section four */
-    .blog-wrapper-sm{
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
 /*************** extra small sized screen ******************/
 
 @media screen and (max-width: 500px){
@@ -630,10 +654,10 @@ blockquote span{
         padding-right: 8px;
     }
     h2{
-        font-size: 30px!important;
+        font-size: 30px;
     }
     h3{
-        font-size: 20px!important;
+        font-size: 20px;
     }
     p{
         font-size: 15px;
